@@ -48,6 +48,7 @@ body {
     top: 167px;
     left: -212px;
     float: left;
+    z-index: 1;
 }
 
 .ryu-cool {
@@ -55,12 +56,20 @@ body {
 }
 
 .instructions {
-    float: right;
+    position: absolute;
+    top: 300px;
+    right: 135px;
+    z-index: 0;
 }
 
-.instructions p {
+.instructions p, .instructions h1 {
     color: red;
     font-size: 2em;
     font-family: "Arial", sans-serif;
     text-align: center;
+    line-height: 1.25;
+}
+
+.instructions h1 {
+    font-style: italic;    
 }
